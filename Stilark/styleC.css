@@ -22,16 +22,19 @@ body {
     background-size: var(--s) var(--s);
 }
 h1{
-    color: #7700ff;
+    color: #d5b1ff;
     display: flex;
     justify-content: center;
 }
 p{
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(245, 201, 255);
 }
 .button{
     background-color: #940B92;
     box-shadow: #610C9F 0.5em 0.75em;
+}
+a {
+    color: #d5b1ff
 }

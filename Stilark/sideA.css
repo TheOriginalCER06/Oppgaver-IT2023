@@ -45,13 +45,14 @@ h2 {
 p {
     margin: 0;
     padding: 0;
-  color: rgb(167, 167, 152);
-  background-color: rgba(85, 90, 90, 0.649);
+    color: rgb(167, 167, 152);
+
 }
 
 a {
     width: 100%;
     height: 100%;
+    color: #ffffff;
 }
 
 .button {
