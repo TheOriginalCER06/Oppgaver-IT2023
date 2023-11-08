@@ -29,6 +29,11 @@ a {
     color: black;
 }
 .button{
+    color: black;
     background-color: #ffe69b;
     box-shadow: #83d400 0.5em 0.75em;
+}
+
+a {
+    color: black
 }
