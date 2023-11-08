@@ -1,9 +1,21 @@
 body {
-    font-family: Georgia, serif;
-
+    --s: 120px; /* control the size */
+    
     background:
-    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
-    radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
-    #8a3;
-    background-size: 20px 20px;  }
-    h1{color: rgb(66, 166, 254);}
+      conic-gradient(from 150deg at 50% 33%,#0000,#FAAB78 .5deg 60deg,#0000 60.5deg) 
+        calc(var(--s)/2) calc(var(--s)/1.4),
+      conic-gradient(from -30deg at 50% 66%,#0000,#FFDCA9 .5deg 60deg,#FCF9BE 60.5deg);
+    background-size: var(--s) calc(var(--s)/1.154);
+    
+    
+}
+h1{
+    color: #83d400;
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    color: #83d400;
+}
