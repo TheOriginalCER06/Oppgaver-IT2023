@@ -1,37 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
-html, h1 { color: rgb(180, 180, 180);
-  font-family: georgia, sans-serif;
-  font-size: 6vw;
-  text-align: center; 
-}
-h2 {       color: rgb(167, 167, 152);
-    font-family: georgia , sans-serif;
-    font-size: 3vw; 
-}
-p {
-  color: rgb(167, 167, 152);
-  font-size: 2vw;
-  font-family: georgia, sans-serif;
-  background-color: rgba(85, 90, 90, 0.649);
-}
-a {
-  
-  font-size: 1vw; 
-  font-family: georgia, sans-serif;
-  
-}
-.button{
-    background-color: #ffffff84;
-    box-shadow: #454a45 0.5em 0.75em;
-}
-
 body {
-  font-family: georgia, serif;
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: georgia, serif;
   background-color:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -39,12 +16,58 @@ body {
   radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
   radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-content: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+div {
+    width: fit-content;
+    height: fit-content;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+  
+html, h1 { 
+    color: rgb(180, 180, 180);
+}
+h2 {       
+    font-family: georgia , sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+  color: rgb(167, 167, 152);
+  background-color: rgba(85, 90, 90, 0.649);
+}
+
+a {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 6em;
+    height: 0.75em;
+
+    padding: 2em;
+    text-align: center;
+    
+    background: darkblue;
+    background-color: #ffffff84;
+    box-shadow: #454a45 0.5em 0.75em;
+    margin: 2em 0 ;
+}
+
+.button:hover {
+    scale: 1.05;
+    cursor: pointer;
 }

@@ -24,6 +24,10 @@ p{
     display: flex;
     justify-content: center;
 }
+
+a {
+    color: black;
+}
 .button{
     background-color: #ffe69b;
     box-shadow: #83d400 0.5em 0.75em;

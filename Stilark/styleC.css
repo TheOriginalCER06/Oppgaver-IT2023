@@ -22,14 +22,14 @@ body {
     background-size: var(--s) var(--s);
 }
 h1{
-    color: #3b057a;
+    color: white;
     display: flex;
     justify-content: center;
 }
 p{
     display: flex;
     justify-content: center;
-    color: #3b057a;
+    color: white;
 }
 .button{
     background-color: #940B92;
