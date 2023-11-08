@@ -25,6 +25,10 @@ a {
   font-family: georgia, sans-serif;
   
 }
+.button{
+    background-color: #ffffff84;
+    box-shadow: #454a45 0.5em 0.75em;
+}
 
 body {
   font-family: georgia, serif;
@@ -38,4 +42,9 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
 }
