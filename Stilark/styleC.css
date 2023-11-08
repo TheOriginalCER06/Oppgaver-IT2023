@@ -1,4 +1,10 @@
 body {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     --s: 150px; /* control the size */
     --c1: #d94f9d;
     --c2: #95174b;
@@ -15,7 +21,6 @@ body {
       var(--c1);
     background-size: var(--s) var(--s);
 }
-
 h1{
     color: #3b057a;
     display: flex;
@@ -24,6 +29,9 @@ h1{
 p{
     display: flex;
     justify-content: center;
-    color: #610C9F;
+    color: #3b057a;
+}
+.button{
     background-color: #940B92;
+    box-shadow: #610C9F 0.5em 0.75em;
 }

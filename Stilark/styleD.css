@@ -1,4 +1,10 @@
 body {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     --s: 120px; /* control the size */
     --c1: #FA7070;
     --c2: #d1fdb2;
@@ -10,18 +16,29 @@ body {
      conic-gradient(from -45deg at 50% 41%,var(--c1) 90deg,var(--c2) 0) 
         calc(var(--s)/2) 0;
     background-size: var(--s) var(--s);
+    background-color: #A6CF98
 }
 
 h1{
-    color: #557C55;
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: #557C55;
+    display: flex;
+
+}
+.button{
+    background-color: #A6CF98;
+    box-shadow: #557C55 0.5em 0.75em;
 }
 p{
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
     color: #557C55;
-    background-color: #A6CF98;
+
 }
 a{
     color: #8aff8a;
