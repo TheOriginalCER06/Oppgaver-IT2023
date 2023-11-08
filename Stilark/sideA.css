@@ -4,40 +4,38 @@
   box-sizing: border-box;
 }
   
-  html,
-
-  h1 { color: rgb(180, 180, 180);
-    font-family: georgia, sans-serif;
-    font-size: 6vw;
-    text-align: center; }
-
-  h2 {       color: rgb(167, 167, 152);
-      font-family: georgia , sans-serif;
-      font-size: 3vw; }
-
-    p {
-      color: rgb(167, 167, 152);
-      font-size: 2vw;
-      font-family: georgia, sans-serif;
-    }
-
-    a  {
-      
-      font-size: 1vw; 
-      font-family: georgia, sans-serif;
-      
-    }
+html, h1 { color: rgb(180, 180, 180);
+  font-family: georgia, sans-serif;
+  font-size: 6vw;
+  text-align: center; 
+}
+h2 {       color: rgb(167, 167, 152);
+    font-family: georgia , sans-serif;
+    font-size: 3vw; 
+}
+p {
+  color: rgb(167, 167, 152);
+  font-size: 2vw;
+  font-family: georgia, sans-serif;
+  background-color: rgba(85, 90, 90, 0.649);
+}
+a {
+  
+  font-size: 1vw; 
+  font-family: georgia, sans-serif;
+  
+}
 
 body {
-    font-family: georgia, serif;
-    background-color:black;
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;;
-    width: 100vw;
-    height: 100vh;
-  }
+  font-family: georgia, serif;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;;
+  width: 100vw;
+  height: 100vh;
+}
