@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side D - Sirkler</title>
     <link rel="stylesheet" href="Stilark/style.css">
-    <link rel="stylesheet" href="Stilark/styleD.css">
+
+    <style>
+        body {
+            --s: 120px; /* control the size */
+            --c1: #FA7070;
+            --c2: #d1fdb2;
+    
+            --_g: 80%,var(--c1) 25.4%,#0000 26%;
+            background:
+            radial-gradient(at 80% var(--_g)),
+            radial-gradient(at 20% var(--_g)),
+            conic-gradient(from -45deg at 50% 41%,var(--c1) 90deg,var(--c2) 0) 
+            calc(var(--s)/2) 0;
+            background-size: var(--s) var(--s);
+            background-color: #A6CF98
+        }
+
+        .buttons a {
+            color: #ff6363;
+            background-color: #A6CF98;
+            box-shadow: #557C55 0.5em 0.75em;
+        } 
+    </style>
 </head>
 <body>
-    <h1>Hjerter!</h1>
-    <p>Hjerter er grunnmurer i verden, følelser bygget alt!</p>    
-    <p class="button"><a href="index.html">Hjemlandet</a></p>
-    <p class="button"><a href="sideA.html">Stjerner</a></p>
-    <p class="button"><a href="sideB.html">Trekanter</a></p>
-    <p class="button"><a href="sideC.html">Sirkler</a></p>
-    <p class="button"><a href="sideD.html">Hjerter</a></p>
-    <p class="button"><a href="https://projects.verou.me/css3patterns/">CSS3 Patterns</a></p>
-    <p class="button"><a href="https://css-pattern.com/">CSS Pattern</a></p>
+    <div>
+        <div>
+            <h1 style="color: #205a20;">Hjerter!</h1>
+            <p>Hjerter er grunnmurer i verden, følelser bygget alt!</p>    
+        </div>
+        <div class="buttons">
+            <a href="index.html">Hjemlandet</a>
+            <a href="sideA.html">Stjerner</a>
+            <a href="sideB.html">Trekanter</a>
+            <a href="sideC.html">Sirkler</a>
+            <a href="sideD.html">Hjerter</a>
+            <a href="https://projects.verou.me/css3patterns/">CSS3 Patterns</a>
+            <a href="https://css-pattern.com/">CSS Pattern</a>
+        </div>
+    </div>  
+
 </body>
 </html>
