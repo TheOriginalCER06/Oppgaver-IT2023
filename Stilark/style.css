@@ -74,6 +74,6 @@ a:hover {
         scale: 1.10;
     }
     100% {
-        scale: 1;
+        scale: 1.0;
     }
 }
