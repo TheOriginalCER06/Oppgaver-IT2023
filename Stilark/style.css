@@ -1,14 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     justify-content: center;
     align-content: center;
-
     font-family: Georgia, serif;
 }
 
@@ -54,14 +49,16 @@ a:hover {
 }
 
 .buttons a {
-    width: 7em;
-    height: 0.75em;
+    width: 6vw;
+    min-width: 80px;
+    height: 1.33vh;
+    min-height: 20px;
 
     padding: 2em;
     text-align: center;
 
     box-shadow: black 0.5em 0.75em;
-    margin: 2em 0 ;
+    margin: 1.5em 0;
 }
 
 
