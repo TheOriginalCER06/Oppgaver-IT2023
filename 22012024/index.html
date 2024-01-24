@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>000-4</title>
+    </head>
+
+    <body>
+        <div id="feltEn"></div>
+        <div id="feltTo"></div>
+        <script>
+            function tilfeldigTall() {
+                let tilfeldig = Math.floor(Math.random() * 6) + 3;
+                return tilfeldig;
+            }
+            document.getElementById("feltEn").innerHTML = "Tilfeldig tall (mellom 3 og 8): " + tilfeldigTall();
+
+            /*
+             * @param {number} verdi
+             * @param {string} valuta //DKK eller SEK
+             * @returns {number} //verdi i NOK
+             */
+
+            function valutaKalkulator(verdi, valuta) {
+                if (valuta == "DKK") {
+                    return verdi * 0.73;
+                } else if (valuta == "SEK") {
+                    return verdi * 0.99;
+                }
+            }
+            console.log(valutaKalkulator(100, "DKK") + " NOK fra 100 DKK");
+            console.log(valutaKalkulator(100, "SEK") + " NOK fra 100 SEK");
+
+			document.getElementById("feltTo").innerHTML = "100 DKK = " + valutaKalkulator(100, "DKK") + " NOK<br>100 SEK = " + valutaKalkulator(100, "SEK") + " NOK";
+        </script>
+    </body>
+</html>

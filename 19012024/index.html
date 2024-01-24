@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 8 og 9, 3D</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <button id="katt">Trykk her</button>
+    <div id="mittFelt">
+    
+    </div>
+    <script>
+        let knapp = document.getElementById("katt");
+        knapp.addEventListener("click", () => {
+            let felt = document.getElementById("mittFelt");
+            felt.innerHTML += "<p>=^.^=</p>";
+        });
+        felt = document.getElementById("mittFelt");
+        felt.innerHTML = "<p>=^.^=</p>";
+
+    </script>
+</body>
+
+</html>
