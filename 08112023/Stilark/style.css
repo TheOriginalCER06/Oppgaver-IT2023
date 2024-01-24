@@ -1,36 +1,31 @@
 body {
     margin: 0;
     padding: 0;
-
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     justify-content: center;
     align-content: center;
-
-  font-family: Georgia, serif;
-  background-color:#269;
-  background-image: linear-gradient(white 2px, transparent 2px),
-  linear-gradient(90deg, white 2px, transparent 2px),
-  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    font-family: Georgia, serif;
 }
 
 div {
     width: fit-content;
     height: fit-content;
-
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
 
 a {
     text-decoration: none;
-    color: white;
     width: 100%;
     height: 100%;
+}
+
+a:hover {
+    scale: 1.05;
+    cursor: pointer;
 }
 
 .title {
@@ -46,33 +41,36 @@ a {
     animation: logo 1s ease-in infinite;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-.button {
-    width: 7em;
-    height: 0.75em;
+.buttons a {
+    width: 6vw;
+    min-width: 80px;
+    height: 1.33vh;
+    min-height: 20px;
 
     padding: 2em;
     text-align: center;
-    
-    background: darkblue;
+
     box-shadow: black 0.5em 0.75em;
-    margin: 2em 0 ;
+    margin: 1.5em 0;
 }
 
-.button:hover {
-    scale: 1.05;
-    cursor: pointer;
-}
+
 
 @keyframes logo {
-  0% {
-      scale: 1.0;
-  }
-
-50% {
+    0% {
+        scale: 1.0;
+    }
+    50% {
         scale: 1.10;
-}
-100% {
-    scale: 1;
-}
+    }
+    100% {
+        scale: 1.0;
+    }
 }
