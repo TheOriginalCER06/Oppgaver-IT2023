@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004</title>
+    <link rel="stylesheet" href="stilark/hovedstilark.css">
+</head>
+<body>
+    <script>
+        function createTable() {
+            // Check if the table already exists
+            let existingTable = document.getElementById("myTable");
+
+            if (existingTable) {
+                // Table already exists
+                console.log("Table already exists");
+            } else {
+                // Create a new table
+                const newTable = document.createElement('table');
+                newTable.id = "myTable"; // Set an id for the table
+
+                // Create the table header
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+                const headers = ['Start', 'Slutt', 'Navn'];
+
+                headers.forEach(headerText => {
+                    const th = document.createElement('th');
+                    th.appendChild(document.createTextNode(headerText));
+                    headerRow.appendChild(th);
+                });
+
+                thead.appendChild(headerRow);
+                newTable.appendChild(thead);
+                newTable.border = 1;
+
+                // Create the table body
+                const tbody = document.createElement('tbody');
+                const rows = [
+                    ['1.nov', '31.mars', 'Vinter'],
+                    ['1.apr', '31.mai', 'Vår'],
+                    ['1.jun', '15.okt', 'Sommer']
+                ];
+
+                rows.forEach(rowData => {
+                    const tr = document.createElement('tr');
+
+                    rowData.forEach(cellData => {
+                        const td = document.createElement('td');
+                        td.appendChild(document.createTextNode(cellData));
+                        tr.appendChild(td);
+                    });
+
+                    tbody.appendChild(tr);
+                });
+
+                newTable.appendChild(tbody);
+
+                // Append the table to the body of the document
+                document.body.appendChild(newTable);
+            }
+        }
+
+        createTable();
+    </script>
+</body>
+</html>

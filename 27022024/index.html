@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004</title>
+</head>
+<body>
+    <script>
+        function alleFavoritter(favoritter) {
+    let favorittListe = "";
+    for (let i = 0; i < favoritter.length ; i++) {
+        favorittListe += favoritter[i] + " "; //ENDRET HER slik at det ikke blir ett mellomrom i starten, men heller bare bakerst. Det ser finere ut (:
+    }
+    return favorittListe;
+}
+
+let meg = {
+    navn: "Ivar",
+    fodselsaar: 1975,
+    favorittfilm: "Pass",
+    favorittall: 101,
+    favorittmat: ["Taco","Biff","Fiskepinner"]
+};
+
+console.log(meg.navn);
+console.log(alleFavoritter(meg.favorittmat));
+    </script>
+</body>
+</html>

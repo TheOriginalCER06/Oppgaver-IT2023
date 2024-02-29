@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004</title>
+    <link rel="stylesheet" href="stilark/hovedstilark.css">
+</head>
+<body>
+    <table id="">
+        <thead>
+            <tr>
+                <th>Start</th>
+                <th>Slutt</th>
+                <th>Navn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.nov</td>
+                <td>31.mars</td>
+                <td>Vinter</td>
+            </tr>
+            <tr>
+                <td>1.apr</td>
+                <td>31.mai</td>
+                <td>Vår</td>
+            </tr>
+            <tr>
+                <td>1.jun</td>
+                <td>15.okt</td>
+                <td>Sommer</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        //let minTabell = document.getElementsByTagName("table");
+        let minTabell = document.getElementById("minTabell")
+        function createTable() {
+            if (typeof minTabell !== 'undefined') {
+                //har allerede tabellen
+             } else {
+                const minTabell = document.createElement('table');
+                minTabell.appendChild("<p>ny tabell</p>")
+            }
+            minTabell.border = '1';
+
+        }
+        createTable();
+    </script>
+</body>
+</html>
