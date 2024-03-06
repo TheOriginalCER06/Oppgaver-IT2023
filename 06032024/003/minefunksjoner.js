@@ -1,0 +1,1 @@
+function loadNav() {let nav = document.getElementById("nav");nav.innerHTML = `<nav class="navbar"><h1 class="logo"><a href="index.html">LOGO</a></h1><a href ="index.html" >Hjem</a><a href ="om.html" >Om</a><a href ="skrive.html" >Skrive</a><a href ="kontakt.html" >Kontakt</a><a href ="tel:+4712312311">tel:+4712312311</a></nav>`;} loadNav();
