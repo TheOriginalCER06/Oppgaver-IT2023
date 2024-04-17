@@ -1,0 +1,2 @@
+location.href = 'produkt.html'; 
+//https://developer.mozilla.org/en-US/docs/Web/API/Window 
