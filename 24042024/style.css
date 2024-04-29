@@ -1,0 +1,109 @@
+* {
+	width: 60%;
+	margin: auto;
+	background-color: lightgrey;
+	border-radius: 5px;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+#valg {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+#valg > div {
+	height: 50px;
+    background-color: darkgrey;
+    border: solid 1px black;
+    margin: 5px;
+    justify-content: center;
+}
+#valg > .selected {
+    background-color: grey;
+}
+
+#resultat-boks {
+	width: auto;
+	height: 40px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	background-color: white;
+	margin: 10px auto;
+    text-align: center;
+    font-size: 36px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#buttons > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#buttons > button {
+    height: 50px;
+    width: 200px;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    
+}
+#buttons > div > input {
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    font-size: 30px;
+}
+#utregning {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.gruppe {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.gruppe > div {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-areas:
+		"b"
+		"k";
+}
+.bilde {
+	grid-area: b;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+.knapp {
+	grid-area: k;
+}
+.tekst {
+	grid-area: p;
+}
+.skriv {
+	grid-area: d;
+}
+
+#inntast {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.felt {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "p" "d" "d" "d";
+}
+
+#kalkuler {
+	width: 60%;
+	height: 40px;
+}
