@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <script type="text/javascript" >
+        document.addEventListener("DOMContentLoaded", function() {
+            let tall1 = document.querySelector("#tall1").value;
+            let tall2 = document.querySelector("#tall2").value;
+            let sum_box = document.querySelector("#resultat");
+            let total_sum = document.querySelector("#sum");
+            let frakt = document.querySelector("#opsjon1");
+            let hente = document.querySelector("#opsjon2");
+            let mva = document.querySelector("#mva");
+            let knapp = document.querySelector("#knapp");
+
+            const update_sum = () => {
+                let tall1 = document.querySelector("#tall1").value;
+                let tall2 = document.querySelector("#tall2").value;
+                let sum = Number(tall1) + Number(tall2);
+                sum_box.innerHTML = sum;
+                if(mva.checked){ //MVA først siden man betaler ikke mva på frakt osv (:
+                    sum = sum * 1.25;
+                } else {
+                    sum = sum / 1;
+                }
+                if(frakt.checked){
+                    sum = sum + 100; // 100 kr frakt
+                    hente.checked = false;
+                }
+                if(hente.checked){
+                    sum = sum; // frakt i verdi rabatt rabatt for å hente selv
+                    frakt.checked = false;
+                } 
+                total_sum.innerHTML = sum;
+            }
+            knapp.onclick = function(){
+                update_sum();
+            }
+
+            frakt.onchange = function(){
+                hente.checked = false;
+                update_sum();
+            }
+            hente.onchange = function(){
+                frakt.checked = false;
+                update_sum();
+            }
+            mva.onchange = function(){
+                update_sum();
+            }
+    });
+        </script>
+        <label for="tall1">Tall 1</label>
+        <input type="number" id="tall1"> <br>
+        <label for="tall2">Tall 2</label>
+        <input type="number" id="tall2"> <br>
+        <button id="knapp">Finn summen</button>
+        <p id="resultat"></p>
+
+        <label for="opsjon1">Frakt</label>
+        <input type="radio" value="Frakt" id="opsjon1" checked> <br>
+        <label for="">Hente selv</label>
+        <input type="radio" value="Hente" id="opsjon2"> <br>
+        <label for="mva">MVA</label>
+        <input type="checkbox" name="Mva1" value="1.25" id="mva" checked>
+        <p id="sum">AAAA</p>
+    </body>
+</html>
