@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004</title>
+    <link rel="stylesheet" href="stilark/hovedstilark.css">
+</head>
+<body>
+    <table class="tabell">
+        <thead>
+            <tr>
+                <th>Start</th>
+                <th>Slutt</th>
+                <th>Navn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.nov</td>
+                <td>31.mars</td>
+                <td>Vinter</td>
+            </tr>
+            <tr>
+                <td>1.apr</td>
+                <td>31.mai</td>
+                <td>Vår</td>
+            </tr>
+            <tr>
+                <td>1.jun</td>
+                <td>15.okt</td>
+                <td>Sommer</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        //add border to the whole table
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var table = document.querySelector('.tabell');
+            table.border = 1;
+        });
+    </script>
+</body>
+</html>

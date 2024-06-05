@@ -1,0 +1,13 @@
+body {
+    background-color: #dedede;
+    color: #323232;
+
+}
+
+main {
+    background-color: #fff;
+}
+
+#ansvar, span {
+    font-size: x-small;
+}

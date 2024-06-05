@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001</title>
+    <link rel="stylesheet" href="hovedstilark.css">
+    </head>
+<body>
+    <div id="hoved">
+        <!-- <header>Min kalkulatorside</header> -->
+        <nav>
+            <ul>
+                <li id="m1"><a href="#">Meny</a></li>
+                <li id="m2"><a href="#">Meny2</a></li>
+                <li id="m3"><a href="#">Meny3</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="en">Databehandling</div> <br>
+
+            <div id="to">
+                <label for="tall1">1:</label>
+                <input type="number" id="F1" name="tall1" required><br><br>
+
+                <label for="tall2">2:</label>
+                <input type="number" id="F2" name="tall2" required><br><br>
+            </div>
+
+            <div id="tre">
+                <button id="knapp" hidden>Regn ut</button>
+                <p id="labelR1">Resultat: </p><p id="R1"></p><br>
+                <span id="SkjultFelt01"></span>
+                <span id="SkjultFelt02"></span>
+            </div>
+        </main>
+        <footer>🤓<span id="ansvar">Bruk av tall er på eget ansvar</span></footer>
+    </div>
+    <script type="">
+        let tall1El = document.querySelector("#F1");
+        let tall2El = document.querySelector("#F2");
+        let knappEl = document.querySelector("#knapp");
+        let resultatEl = document.querySelector("#R1");
+
+        tall1El.addEventListener("input", function(){
+            if(tall1El.value.length > 0 && tall2El.value.length > 0){
+                knappEl.removeAttribute("hidden");
+            } else {
+                knappEl.setAttribute("hidden", "");
+            }
+        });
+        tall2El.addEventListener("input", function(){
+            if(tall1El.value.length > 0 && tall2El.value.length > 0){
+                knappEl.removeAttribute("hidden");
+            } else {
+                knappEl.setAttribute("hidden", "");
+            }
+        });
+        knappEl.addEventListener("click", function(){
+            let tall1 = Number(tall1El.value);
+            let tall2 = Number(tall2El.value);
+            let sum = tall1 + tall2;
+            resultatEl.innerHTML = sum;
+        });
+    </script>
+    
+</body>
+</html>

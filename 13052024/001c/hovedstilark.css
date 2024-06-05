@@ -1,0 +1,24 @@
+body {
+    background-color: #dedede;
+    color: #323232;
+
+}
+
+main {
+    background-color: #fff;
+}
+
+nav, ul {
+    list-style: none;
+    color: #cccccc;
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    & li {
+        padding: 10px;
+    }
+}
+
+#ansvar, span {
+    font-size: x-small;
+}

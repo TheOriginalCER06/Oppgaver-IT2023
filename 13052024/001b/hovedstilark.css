@@ -1,0 +1,18 @@
+body {
+    background-color: #dedede;
+    color: #323232;
+
+}
+
+main {
+    background-color: #fff;
+}
+
+nav, ul {
+    color: #cccccc;
+    font-size: x-small;
+}
+
+#ansvar, span {
+    font-size: x-small;
+}
