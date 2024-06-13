@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid 1forslag</title>
+<style>
+    :root {
+    --svart: #000;
+    --hvit: #fff;
+    --tekstFarge: #000;
+    --overskriftFarge: #292929;
+    --BGFarge: rgb(242, 235, 221);
+    --nav1BGFarge: rgb(227, 225, 220);
+    --nav2BGFarge: rgb(237, 233, 227);
+    --linkBGFarge: #d6ffa1ba;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--BGFarge);
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 150px auto;
+        gap: 1em;
+    }
+    nav {
+        grid-column: 1;
+        background-color: var(--nav1BGFarge);
+        padding: 1em;
+    }
+    main {
+        grid-column: 2;
+        padding: 1em;
+    }
+    .bottom-box {
+        grid-column: 1 / span 2;
+        background-color: var(--nav2BGFarge);
+        padding: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+    }
+    .bottom-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+    }
+    .bottom-box ul li {
+        padding: 0;
+        margin: 10px;
+        border: 1px solid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--overskriftFarge);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Hoved innhold</h1>
+            <h2>Dette er hoved innhold</h2>
+            <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur libero deserunt accusamus nesciunt repellat, obcaecati rem quaerat tenetur omnis. Molestiae, inventore temporibus totam nostrum tempora repellat qui blanditiis sunt necessitatibus.
+
+            <h2>Dette er 2hoved innhold</h2>
+            <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur libero deserunt accusamus nesciunt repellat, obcaecati rem quaerat tenetur omnis. Molestiae, inventore temporibus totam nostrum tempora repellat qui blanditiis sunt necessitatibus.
+        </main>
+        <div class="bottom-box">
+            <ul class="list1">
+                <li>List 1 Item 1</li>
+                <li>List 1 Item 2</li>
+                <li>List 1 Item 3</li>
+                <li>List 1 Item 4</li>
+                <li>List 1 Item 5</li>
+                <li>List 1 Item 6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

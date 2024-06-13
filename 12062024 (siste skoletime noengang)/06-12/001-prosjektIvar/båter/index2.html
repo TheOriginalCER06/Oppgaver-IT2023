@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript bildeattributter</title>
+    <link rel="stylesheet" href="ressurs/hovedstilark.css">
+</head>
+<body>
+    <p>Båtene å bruke er <img id="bilde1" loading="lazy"> og
+    <img id="bilde2" loading="lazy"></p>
+
+    <p>Hvis en er heldig så møter en denne: <img id="bilde3" loading="lazy"></p>
+    
+
+    <script>
+const images = [
+    {
+        Filename: "ressurs/boat-8275962_640.jpg",
+        FileAltText: "Boat in a lake",
+        Width: "640",
+        Height: ""
+    },
+    {
+        Filename: "ressurs/boat-4395122_640.jpg",
+        FileAltText: "Boat in the sea",
+        Width: "640",
+        Height: ""
+    },
+    {
+        Filename: "ressurs/sailing-ship-659758_640.jpg",
+        FileAltText: "",
+        Width: "640",
+        Height: ""
+    }
+];
+
+function updateImageAttributes(imgId, image) {
+    const imgElement = document.getElementById(imgId);
+    if (imgElement) {
+        imgElement.setAttribute("src",image.Filename );
+        imgElement.setAttribute("alt",image.FileAltText );
+        imgElement.setAttribute("width",image.Width );
+        imgElement.setAttribute("height",image.Height );
+        //imgElement.src = image.Filename;
+        //imgElement.alt = image.FileAltText;
+        //imgElement.width = image.Width;
+        //imgElement.height = image.Height;
+    }
+}
+
+updateImageAttributes('bilde1', images[0]);
+updateImageAttributes('bilde2', images[1]);
+updateImageAttributes('bilde3', images[2]);
+
+    </script>
+</body>
+</html>

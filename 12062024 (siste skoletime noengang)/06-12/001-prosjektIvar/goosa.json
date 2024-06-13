@@ -1,0 +1,24 @@
+{
+	"table": "goosoner",
+	"rows":
+	[
+		{
+			"ID": 1,
+			"FN": "Billy",
+			"LN": "The Kid",
+			"age": 14
+		},
+		{
+			"ID": 2,
+			"FN": "Didric",
+			"LN": "NoFly",
+			"age": 22
+		},
+		{
+			"ID": 3,
+			"FN": "Messy",
+			"LN": "Leonora",
+			"age": 19
+		}
+	]
+}
